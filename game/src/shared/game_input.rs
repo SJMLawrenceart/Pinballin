@@ -95,6 +95,7 @@ bitflags! {
     const ToggleDebugGoaps = 0b00000100_00000000_00000000_00000000;
     const HasMouse = 0b00001000_00000000_00000000_00000000;
     const HasJoystick = 0b00010000_00000000_00000000_00000000;
+    const Action = 0b00000000_00000001;
   }
 }
 
@@ -206,6 +207,18 @@ impl GameInput {
         KeyboardKey::Key0 | KeyboardKey::Numpad0,
       )) => {
         self.developer_reset_ball.release();
+      }
+      DeviceEvent::Keyboard(KeyboardEvent::Button(
+        ButtonState::Down,
+        KeyboardKey::Space,
+      )) => {
+        self.state |= GameInputState::Action;
+      }
+      DeviceEvent::Keyboard(KeyboardEvent::Button(
+        ButtonState::Up,
+        KeyboardKey::Space,
+      )) => {
+        self.state -= GameInputState::Action;
       }
       _ => {}
     }

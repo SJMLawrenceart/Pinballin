@@ -3,7 +3,7 @@ mod network_controller;
 use crate::server::network_controller::NetworkController;
 use crate::shared::animations::AnimationTransitions;
 use crate::shared::game_input::GameInput;
-use crate::shared::{components, ui_components};
+use crate::shared::{components, ui_components, flapper};
 use engine::systems::hdr::HdrPipeline;
 use engine::systems::Scheduler;
 
@@ -47,6 +47,7 @@ pub async fn main() {
 
     runner.attach_system::<inputs::InputsSystem>();
     runner.attach_system::<collision::CollisionSystem>();
+    runner.attach_system::<flapper::FlapperSystem>();
 
     runner.attach_system::<developer::DeveloperSystem>();
   }

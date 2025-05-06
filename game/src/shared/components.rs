@@ -13,6 +13,7 @@ impl Registry for GameComponents {
 
     Health::register();
     Ball::register();
+    Flapper::register();
     Pickup::register();
     SpawnArea::register();
   }
@@ -41,6 +42,11 @@ impl ProvideAssets for Ball {}
 pub struct Pickup {}
 
 impl ProvideAssets for Pickup {}
+
+#[derive(Debug, Clone, Serialize, Deserialize, Registerable, Schema, Duplicate)]
+pub struct Flapper {}
+
+impl ProvideAssets for Flapper {}
 
 #[derive(Debug, Clone, Serialize, Deserialize, Registerable, Schema, Duplicate)]
 pub struct SpawnArea {}

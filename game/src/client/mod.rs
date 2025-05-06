@@ -6,7 +6,7 @@ mod ui_debug;
 mod ui_score;
 
 use crate::client::browser::BrowserSystem;
-use crate::shared::{developer, inputs, pickup};
+use crate::shared::{developer, inputs, pickup, flapper};
 use crate::{
   client::browser::Message,
   shared::game_input::GameInput,
@@ -65,6 +65,8 @@ pub fn main(
   scheduler.attach_system::<collision::CollisionSystem>();
   scheduler.attach_system::<inputs::InputsSystem>();
   scheduler.attach_system::<developer::DeveloperSystem>();
+  
+  scheduler.attach_system::<flapper::FlapperSystem>();
 
   scheduler.attach_system::<pickup::PickupSystem>();
 

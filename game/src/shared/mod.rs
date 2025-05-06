@@ -6,3 +6,4 @@ pub mod game_input;
 pub mod inputs;
 pub mod pickup;
 pub mod ui_components;
+pub mod flapper; 

@@ -1,5 +1,5 @@
 {
-  "version": "v0.0.8",
+  "version": "v0.0.9",
   "filename": "10_game.lvl",
   "config": {
     "id": "6c29af9f-709c-462c-a7d9-a8333f24aa40",
@@ -35,7 +35,8 @@
       "bias": [
         0,
         0
-      ]
+      ],
+      "terrain_shadow_bias": 20
     },
     "physics": {
       "color": [
@@ -177,7 +178,7 @@
                     }
                   },
                   "density": 100,
-                  "dynamic_type": "Position",
+                  "dynamic_type": "Dynamic",
                   "friction": 1,
                   "id": "f444ba41-4dcf-4f74-a5a6-569c235a233b",
                   "is_sensor": false,
@@ -638,6 +639,103 @@
           },
           {
             "UIScore": {}
+          }
+        ]
+      },
+      "2626d6f5-b7c0-4567-bf1c-0ee0dc4c7cc4": {
+        "id": "2626d6f5-b7c0-4567-bf1c-0ee0dc4c7cc4",
+        "tag": {
+          "name": "Flapper"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -2.6646614,
+              0.104542196,
+              0.36482674
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              0.4286151,
+              0.18060875,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "6a2baa92-ce1f-4c0f-98af-574cd93be369",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Cube": {
+                      "height": 1,
+                      "length": 1,
+                      "width": 1
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Position",
+                  "friction": 0.1,
+                  "id": "12ddd0e4-e47c-43ec-9568-17150e504566",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "53829dcc-2608-4d2b-ae11-5cdc341166df",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "Flapper": {}
+          },
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "6fc0cb2e-142d-4c7b-ae9f-bfc9ff68434b",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
           }
         ]
       }
