@@ -141,7 +141,7 @@
               0
             ],
             "rotation": [
-              0,
+              6.213372137099813,
               0,
               0
             ],
@@ -178,7 +178,7 @@
                     }
                   },
                   "density": 100,
-                  "dynamic_type": "Dynamic",
+                  "dynamic_type": "Static",
                   "friction": 1,
                   "id": "f444ba41-4dcf-4f74-a5a6-569c235a233b",
                   "is_sensor": false,
@@ -232,7 +232,7 @@
             "translation": [
               0,
               3,
-              0
+              0.35440516
             ],
             "rotation": [
               0,
@@ -324,45 +324,6 @@
           },
           {
             "PrefabProviderComponent": {}
-          }
-        ]
-      },
-      "8f788158-39c4-46a9-bd27-2a9a3267664e": {
-        "id": "8f788158-39c4-46a9-bd27-2a9a3267664e",
-        "tag": {
-          "name": "Camera"
-        },
-        "transform": {
-          "transform": {
-            "translation": [
-              0,
-              5,
-              -7
-            ],
-            "rotation": [
-              0.6108652381980153,
-              0,
-              0
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ]
-          }
-        },
-        "components": [
-          {
-            "CameraComponent": {
-              "Perspective": {
-                "fovy": {
-                  "radians": 0.7853981633974483
-                },
-                "primary": true,
-                "zfar": 100,
-                "znear": 0.1
-              }
-            }
           }
         ]
       },
@@ -518,78 +479,6 @@
           }
         ]
       },
-      "2983382e-3dc9-409f-b6e4-8bd3bea4220b": {
-        "id": "2983382e-3dc9-409f-b6e4-8bd3bea4220b",
-        "tag": {
-          "name": "Pickup Spawn Area"
-        },
-        "transform": {
-          "transform": {
-            "translation": [
-              0,
-              0,
-              0
-            ],
-            "rotation": [
-              0,
-              0,
-              0
-            ],
-            "scale": [
-              6,
-              0.1,
-              6
-            ]
-          }
-        },
-        "components": [
-          {
-            "PhysicsComponent": {
-              "debug": false,
-              "id": "be718425-f08d-4362-aada-151059393c57",
-              "joint": {
-                "body": {
-                  "allow_rotation": [
-                    true,
-                    true,
-                    true
-                  ],
-                  "allow_translation": [
-                    true,
-                    true,
-                    true
-                  ],
-                  "ccd": false,
-                  "collider_type": {
-                    "Cube": {
-                      "height": 1,
-                      "length": 1,
-                      "width": 1
-                    }
-                  },
-                  "density": 1,
-                  "dynamic_type": "Static",
-                  "friction": 0.1,
-                  "id": "0462869a-a5e1-48a4-a610-495fcdb6e683",
-                  "is_sensor": true,
-                  "restitution": 0.1
-                },
-                "config": null,
-                "id": "7aef2400-c752-43b4-bd49-9ad5d28abeee",
-                "name": "Joint",
-                "offset": [
-                  0,
-                  0,
-                  0
-                ]
-              }
-            }
-          },
-          {
-            "SpawnArea": {}
-          }
-        ]
-      },
       "bebb6f19-0645-4063-9d04-0d890d44a65f": {
         "id": "bebb6f19-0645-4063-9d04-0d890d44a65f",
         "tag": {
@@ -692,7 +581,7 @@
                     }
                   },
                   "density": 1,
-                  "dynamic_type": "Position",
+                  "dynamic_type": "Static",
                   "friction": 0.1,
                   "id": "12ddd0e4-e47c-43ec-9568-17150e504566",
                   "is_sensor": false,
@@ -738,6 +627,597 @@
             }
           }
         ]
+      },
+      "e8768701-975b-4416-8a27-38fc78301b6c": {
+        "id": "e8768701-975b-4416-8a27-38fc78301b6c",
+        "tag": {
+          "name": "FlipperAnimTest"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -1.2606542,
+              0.0034011602,
+              1.7586923
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "80e01a1e-d795-4755-813f-59c82dde2e9a",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "99a309c9-3c42-4bc7-883a-28e12bfeef91",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "d3b1ee29-96ad-4c12-bd83-21327cc0ce28"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "799faf03-9fa4-4f0b-af23-50f647e7a091",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "3e892df4-4630-433c-b044-4e61e489284e",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "8fcee14d-0e30-4073-80bc-fcbfadb8364b": {
+        "id": "8fcee14d-0e30-4073-80bc-fcbfadb8364b",
+        "tag": {
+          "name": "Rail"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -1.2782279,
+              -5.9371977,
+              -3.7848902
+            ],
+            "rotation": [
+              0,
+              4.6251225,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "097d4ee3-7a24-4392-98e5-c1b4c6cc77e3",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "8c5e4ad3-e220-4126-adfd-95f7c416e08a",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "767f753a-e3a9-4baa-ae56-a54373a44c09"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0,
+                  "id": "e86da6fc-be4f-4548-8197-29792e9af818",
+                  "is_sensor": false,
+                  "restitution": 0
+                },
+                "config": null,
+                "id": "eb59e7e1-6f0c-4039-a08b-8178ab9ab130",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "93d8e3b4-ffe2-4637-88f1-ab770a39671a": {
+        "id": "93d8e3b4-ffe2-4637-88f1-ab770a39671a",
+        "tag": {
+          "name": "Rail2"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              0,
+              2.7362807,
+              0.8321334
+            ],
+            "rotation": [
+              0,
+              4.712389,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "ba5073ec-3f78-404e-a3fc-977ef96464fe",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "b9bdaaeb-5995-4ed0-a21d-639a63dffce0",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "cf08ed62-8ce5-4c9f-8046-e02ab0584994"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "0ea172f3-7dca-4583-8d0a-35acbc81d3aa",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "c4873aef-906d-4d78-99ca-8652c13420a2",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "8c9dc2b3-77ca-41b8-b19b-3006ffadb3c0": {
+        "id": "8c9dc2b3-77ca-41b8-b19b-3006ffadb3c0",
+        "tag": {
+          "name": "Tube"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -7.6556554,
+              -0.71534276,
+              -3.9369602
+            ],
+            "rotation": [
+              0,
+              1.5707964,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "38ad42fb-85df-4484-93e2-042416e8554b",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "8da0ffb9-c897-4ec0-82b3-5e36d561fdb2",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "b39bb13f-e27c-489d-b739-9c95deb00bfd"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "01aa5580-65a6-4f21-b161-6ffd37f5444f",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "93a1ee6b-bded-4274-8dec-d84621f4d351",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "6ed4819f-eda4-415b-b2b5-bb4026989a4c": {
+        "id": "6ed4819f-eda4-415b-b2b5-bb4026989a4c",
+        "tag": {
+          "name": "Camera"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -0.7613565,
+              3.7072406,
+              -20.69781
+            ],
+            "rotation": [
+              0.2617994,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "CameraComponent": {
+              "Perspective": {
+                "fovy": {
+                  "radians": 0.7853982
+                },
+                "primary": true,
+                "zfar": 100,
+                "znear": 0.1
+              }
+            }
+          }
+        ]
+      },
+      "5d8d6638-f717-40df-b9e9-f5e4449bc499": {
+        "id": "5d8d6638-f717-40df-b9e9-f5e4449bc499",
+        "tag": {
+          "name": "Rail2 1"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              5.7947745,
+              -4.4732556,
+              1.3045902
+            ],
+            "rotation": [
+              0,
+              4.712389,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "ba5073ec-3f78-404e-a3fc-977ef96464fe",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "33c35d8d-4e3e-45d3-985e-d20fd411c2ff",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "cf08ed62-8ce5-4c9f-8046-e02ab0584994"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "96b4b13c-c4ef-48df-8327-f8381a527727",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "669cace2-dc05-42e9-9dea-515f2ce5e6e8",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "8d47e741-f46e-4f2a-b069-94823be15748": {
+        "id": "8d47e741-f46e-4f2a-b069-94823be15748",
+        "tag": {
+          "name": "Rail2 2"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              5.7947745,
+              -4.4732556,
+              1.3150976
+            ],
+            "rotation": [
+              0,
+              4.6600291028248595,
+              0.5235987755982988
+            ],
+            "scale": [
+              -1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "ba5073ec-3f78-404e-a3fc-977ef96464fe",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "aa0bb2f4-987a-4d20-8212-285d519b92ff",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "cf08ed62-8ce5-4c9f-8046-e02ab0584994"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "df831fb0-0adf-4f99-8b11-adeea6e7c90b",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "9d3cdf76-cbed-459a-a618-34fe353c39bd",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "models": {
@@ -750,12 +1230,79 @@
         "id": "3d131e90-6c1b-46b6-990f-2b8fff8e784a",
         "source": "models/static-models/Pinball/SM_PinBall.gltf",
         "maxInstances": 10
+      },
+      "c2af9e2b-79d5-4887-919c-ef1f026cf4fa": {
+        "id": "c2af9e2b-79d5-4887-919c-ef1f026cf4fa",
+        "source": "models/AnimTests/BumpersTest.gltf",
+        "maxInstances": 10
+      },
+      "80e01a1e-d795-4755-813f-59c82dde2e9a": {
+        "id": "80e01a1e-d795-4755-813f-59c82dde2e9a",
+        "source": "models/AnimTests/FlipperTest/FlipperTest.gltf",
+        "maxInstances": 10
+      },
+      "097d4ee3-7a24-4392-98e5-c1b4c6cc77e3": {
+        "id": "097d4ee3-7a24-4392-98e5-c1b4c6cc77e3",
+        "source": "models/AnimTests/Rail/SM_RailT1.gltf",
+        "maxInstances": 10
+      },
+      "ba5073ec-3f78-404e-a3fc-977ef96464fe": {
+        "id": "ba5073ec-3f78-404e-a3fc-977ef96464fe",
+        "source": "models/AnimTests/Rail/SM_RailT2.gltf",
+        "maxInstances": 10
+      },
+      "38ad42fb-85df-4484-93e2-042416e8554b": {
+        "id": "38ad42fb-85df-4484-93e2-042416e8554b",
+        "source": "models/AnimTests/TubeT1/SM_TubeT1.gltf",
+        "maxInstances": 10
+      },
+      "8dcd6941-f1c2-4760-b38f-e06346e28d63": {
+        "id": "8dcd6941-f1c2-4760-b38f-e06346e28d63",
+        "source": "models/AnimTests/TubeT1/COL_TubeT1.gltf",
+        "maxInstances": 10
       }
     },
-    "trimeshes": {},
+    "trimeshes": {
+      "d3b1ee29-96ad-4c12-bd83-21327cc0ce28": {
+        "id": "d3b1ee29-96ad-4c12-bd83-21327cc0ce28",
+        "source": "models/AnimTests/COL_FlipperCol/COL_FlipperCol.gltf"
+      },
+      "767f753a-e3a9-4baa-ae56-a54373a44c09": {
+        "id": "767f753a-e3a9-4baa-ae56-a54373a44c09",
+        "source": "models/AnimTests/Rail/SM_RailT1.gltf"
+      },
+      "cf08ed62-8ce5-4c9f-8046-e02ab0584994": {
+        "id": "cf08ed62-8ce5-4c9f-8046-e02ab0584994",
+        "source": "models/AnimTests/Rail/SM_RailT2.gltf"
+      },
+      "b39bb13f-e27c-489d-b739-9c95deb00bfd": {
+        "id": "b39bb13f-e27c-489d-b739-9c95deb00bfd",
+        "source": "models/AnimTests/TubeT1/COL_TubeT1.gltf"
+      }
+    },
     "textures": {},
     "particles": {},
-    "animations": {},
+    "animations": {
+      "9a2ce158-6d93-4148-b2eb-ea6910623e8e": {
+        "id": "9a2ce158-6d93-4148-b2eb-ea6910623e8e",
+        "source": "models/AnimTests/FlipperTest/FlipperTest.gltf",
+        "definitions": [
+          {
+            "id": "a0833f58-b0ce-49c1-b9f4-36df50afb2d8",
+            "collection_id": "9a2ce158-6d93-4148-b2eb-ea6910623e8e",
+            "name": "Armature.001Action",
+            "loops": true
+          },
+          {
+            "id": "f6a4b91b-e8ca-4bb9-a250-fdab452675ac",
+            "collection_id": "9a2ce158-6d93-4148-b2eb-ea6910623e8e",
+            "name": "ArmatureAction",
+            "loops": true
+          }
+        ],
+        "loops": true
+      }
+    },
     "terrains": {},
     "dynamic_backgrounds": {
       "123f9457-4476-48e4-adba-c2ba616fe2e2": {
@@ -764,7 +1311,68 @@
     },
     "hdrs": {},
     "audio": {},
-    "animation_state": {},
+    "animation_state": {
+      "418abf20-1d08-4b95-ad11-dd618608f395": {
+        "id": "418abf20-1d08-4b95-ad11-dd618608f395",
+        "name": "Unknown",
+        "rate": 1,
+        "starting_node": "b740db76-4f94-415e-8727-df5c55c700c0",
+        "sockets": [],
+        "target_skeleton": null,
+        "nodes": [
+          {
+            "id": "b740db76-4f94-415e-8727-df5c55c700c0",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": null,
+            "transitions": []
+          }
+        ],
+        "edges": []
+      },
+      "470193a3-420e-4f97-b92d-e2b6e6a51abe": {
+        "id": "470193a3-420e-4f97-b92d-e2b6e6a51abe",
+        "name": "Unknown",
+        "rate": 1,
+        "starting_node": "5a400cc5-f374-476b-8d8c-3576227f9b06",
+        "sockets": [],
+        "target_skeleton": null,
+        "nodes": [
+          {
+            "id": "5a400cc5-f374-476b-8d8c-3576227f9b06",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": null,
+            "transitions": []
+          }
+        ],
+        "edges": []
+      },
+      "0c92b03d-9062-4027-bd36-2307a45e8f38": {
+        "id": "0c92b03d-9062-4027-bd36-2307a45e8f38",
+        "name": "Unknown",
+        "rate": 1,
+        "starting_node": "44333cea-9834-4e88-99ef-81582d17cc7b",
+        "sockets": [],
+        "target_skeleton": null,
+        "nodes": [
+          {
+            "id": "44333cea-9834-4e88-99ef-81582d17cc7b",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": null,
+            "transitions": []
+          }
+        ],
+        "edges": []
+      }
+    },
     "heightfields": {},
     "behavior_tree": {},
     "planners": {},
