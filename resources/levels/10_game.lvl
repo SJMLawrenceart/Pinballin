@@ -335,13 +335,13 @@
         "transform": {
           "transform": {
             "translation": [
-              0,
-              5,
-              -7
+              5.324049,
+              14.794051,
+              28.50522
             ],
             "rotation": [
-              0.6108652381980153,
-              0,
+              0.5235988,
+              3.1415927,
               0
             ],
             "scale": [
@@ -356,7 +356,7 @@
             "CameraComponent": {
               "Perspective": {
                 "fovy": {
-                  "radians": 0.7853981633974483
+                  "radians": 0.4886921905584123
                 },
                 "primary": true,
                 "zfar": 100,
@@ -738,6 +738,294 @@
             }
           }
         ]
+      },
+      "74788204-9211-4553-9294-32701eece271": {
+        "id": "74788204-9211-4553-9294-32701eece271",
+        "tag": {
+          "name": "Flipper1"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              2.0745943,
+              0.35280126,
+              10.575103
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  6.123233995736766e-17,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "StateMachineComponent": {
+              "id": "0e6636b5-435c-4117-a125-2a6620a4cd28",
+              "machine_id": "a49def1a-b3bd-4731-be46-af378adf6c46"
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "a789a6ac-2a50-4458-a6c9-db2566b8875a",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Position",
+                  "friction": 0,
+                  "id": "cd444f34-c43b-483d-9daa-877d3a1d4fd4",
+                  "is_sensor": true,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "4f5e3490-c9bd-4843-894c-f8083d13fe23",
+                "name": "COLFlip",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "2563a756-05ae-4a02-bc4f-8c793c737040": {
+        "id": "2563a756-05ae-4a02-bc4f-8c793c737040",
+        "tag": {
+          "name": "Board"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              0,
+              1.4167347,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "cc4a0015-5333-4774-9ccf-981cfa1e6f18",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "91ae91e3-bdca-4b17-b49b-0221cab5bfc4",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "6baafc86-3142-48a5-acf5-8c63003cefa7"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Static",
+                  "friction": 0.1,
+                  "id": "a84b7f2f-86ca-4730-8a4d-2fb71f2e0185",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "b84b2393-6886-4b5c-801c-3377f4896e2e",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "43e08f61-dee0-432d-88b5-1f6afa08ca59": {
+        "id": "43e08f61-dee0-432d-88b5-1f6afa08ca59",
+        "tag": {
+          "name": "Flipper1 1"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              -2.9047825,
+              0.35280126,
+              10.575103
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              -1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  6.123233995736766e-17,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "StateMachineComponent": {
+              "id": "50507e7b-57fa-4df2-8094-b4faabfae722",
+              "machine_id": "a49def1a-b3bd-4731-be46-af378adf6c46"
+            }
+          },
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "b37f0432-0036-4049-8ca5-ded7df42153d",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Position",
+                  "friction": 0,
+                  "id": "32ace567-73aa-49c9-9536-a381d69451d0",
+                  "is_sensor": true,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "d9dd94b7-6c95-411f-8fb9-f6e7c4f84b28",
+                "name": "COLFlip",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "models": {
@@ -750,12 +1038,45 @@
         "id": "3d131e90-6c1b-46b6-990f-2b8fff8e784a",
         "source": "models/static-models/Pinball/SM_PinBall.gltf",
         "maxInstances": 10
+      },
+      "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e": {
+        "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+        "source": "models/Interactables/Flipper/Flipper.gltf",
+        "maxInstances": 10
+      },
+      "cc4a0015-5333-4774-9ccf-981cfa1e6f18": {
+        "id": "cc4a0015-5333-4774-9ccf-981cfa1e6f18",
+        "source": "models/ENV/Board/SMBoard.gltf",
+        "maxInstances": 10
       }
     },
-    "trimeshes": {},
+    "trimeshes": {
+      "f27a1d9e-a69c-4e1a-a30b-e1058386aec1": {
+        "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1",
+        "source": "models/Interactables/Flipper/COLFlipper.gltf"
+      },
+      "6baafc86-3142-48a5-acf5-8c63003cefa7": {
+        "id": "6baafc86-3142-48a5-acf5-8c63003cefa7",
+        "source": "models/ENV/Board/COLBoard.gltf"
+      }
+    },
     "textures": {},
     "particles": {},
-    "animations": {},
+    "animations": {
+      "e8a4862a-43e2-422f-b768-4b2204010486": {
+        "id": "e8a4862a-43e2-422f-b768-4b2204010486",
+        "source": "models/Interactables/Flipper/Flipper.gltf",
+        "definitions": [
+          {
+            "id": "e7350490-141f-4fbe-a1bd-ff7416ef7bb5",
+            "collection_id": "e8a4862a-43e2-422f-b768-4b2204010486",
+            "name": "FlipTrack1",
+            "loops": true
+          }
+        ],
+        "loops": true
+      }
+    },
     "terrains": {},
     "dynamic_backgrounds": {
       "123f9457-4476-48e4-adba-c2ba616fe2e2": {
@@ -764,7 +1085,38 @@
     },
     "hdrs": {},
     "audio": {},
-    "animation_state": {},
+    "animation_state": {
+      "a49def1a-b3bd-4731-be46-af378adf6c46": {
+        "id": "a49def1a-b3bd-4731-be46-af378adf6c46",
+        "name": "ANIMFlipperFLIP",
+        "rate": 1,
+        "starting_node": "09306e68-26fd-44db-b975-4e32191c88ca",
+        "sockets": [
+          {
+            "id": "9865fd57-e13f-4bd2-b295-00c2b04653bc",
+            "name": "COL",
+            "joint": 1
+          }
+        ],
+        "target_skeleton": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+        "nodes": [
+          {
+            "id": "09306e68-26fd-44db-b975-4e32191c88ca",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": [
+              "e7350490-141f-4fbe-a1bd-ff7416ef7bb5",
+              "e8a4862a-43e2-422f-b768-4b2204010486"
+            ],
+            "transitions": [],
+            "loops": true
+          }
+        ],
+        "edges": []
+      }
+    },
     "heightfields": {},
     "behavior_tree": {},
     "planners": {},
