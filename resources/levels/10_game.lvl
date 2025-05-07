@@ -637,11 +637,11 @@
           "transform": {
             "translation": [
               -1.2606542,
-              0.0034011602,
-              1.7586923
+              0.12274277,
+              1.7511076
             ],
             "rotation": [
-              0,
+              -0.0690501,
               0,
               0
             ],
@@ -716,6 +716,12 @@
                   0
                 ]
               }
+            }
+          },
+          {
+            "StateMachineComponent": {
+              "id": "37a9ecc8-953f-4e54-87f1-47f0d2fde0d5",
+              "machine_id": "d60e95d5-2e7a-4212-b48f-0db50d49b4b3"
             }
           }
         ]
@@ -1218,6 +1224,64 @@
             }
           }
         ]
+      },
+      "9590e2c9-2811-4df7-b779-ef050fa351ae": {
+        "id": "9590e2c9-2811-4df7-b779-ef050fa351ae",
+        "tag": {
+          "name": "AnimTestCUBES"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              2.704524,
+              0.9398967,
+              -0.9499452
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "c8ec338e-49e7-41a0-b17e-990c3550c93a",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "StateMachineComponent": {
+              "id": "4bd99efe-b5ec-4b4a-b83a-18492b0cbeb2",
+              "machine_id": "7aab719e-8afc-40ce-9bd6-2276d004c91f"
+            }
+          }
+        ]
       }
     },
     "models": {
@@ -1260,6 +1324,11 @@
         "id": "8dcd6941-f1c2-4760-b38f-e06346e28d63",
         "source": "models/AnimTests/TubeT1/COL_TubeT1.gltf",
         "maxInstances": 10
+      },
+      "c8ec338e-49e7-41a0-b17e-990c3550c93a": {
+        "id": "c8ec338e-49e7-41a0-b17e-990c3550c93a",
+        "source": "models/AnimTests/AnimTestCUBES/AnimTestCUBES.gltf",
+        "maxInstances": 10
       }
     },
     "trimeshes": {
@@ -1301,6 +1370,31 @@
           }
         ],
         "loops": true
+      },
+      "f0ec5552-ae90-4cbf-a205-44b14e512cf4": {
+        "id": "f0ec5552-ae90-4cbf-a205-44b14e512cf4",
+        "source": "models/AnimTests/AnimTestCUBES/AnimTestCUBES.gltf",
+        "definitions": [
+          {
+            "id": "bbbe6649-fa5d-4bd7-8640-d495e6edf732",
+            "collection_id": "f0ec5552-ae90-4cbf-a205-44b14e512cf4",
+            "name": "Armature.001Action",
+            "loops": true
+          },
+          {
+            "id": "094454e7-665c-4203-9ba7-23433a46b53b",
+            "collection_id": "f0ec5552-ae90-4cbf-a205-44b14e512cf4",
+            "name": "Armature.002Action",
+            "loops": true
+          },
+          {
+            "id": "8a3be9e1-b4bc-499a-b19b-f3570b6a347b",
+            "collection_id": "f0ec5552-ae90-4cbf-a205-44b14e512cf4",
+            "name": "ArmatureAction",
+            "loops": true
+          }
+        ],
+        "loops": true
       }
     },
     "terrains": {},
@@ -1312,16 +1406,64 @@
     "hdrs": {},
     "audio": {},
     "animation_state": {
-      "418abf20-1d08-4b95-ad11-dd618608f395": {
-        "id": "418abf20-1d08-4b95-ad11-dd618608f395",
-        "name": "Unknown",
+      "d60e95d5-2e7a-4212-b48f-0db50d49b4b3": {
+        "id": "d60e95d5-2e7a-4212-b48f-0db50d49b4b3",
+        "name": "FlipperAnimTest",
         "rate": 1,
-        "starting_node": "b740db76-4f94-415e-8727-df5c55c700c0",
+        "starting_node": "e477de5c-a105-4ed9-9dea-e20c8fe8178c",
+        "sockets": [],
+        "target_skeleton": "80e01a1e-d795-4755-813f-59c82dde2e9a",
+        "nodes": [
+          {
+            "id": "e477de5c-a105-4ed9-9dea-e20c8fe8178c",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": [
+              "a0833f58-b0ce-49c1-b9f4-36df50afb2d8",
+              "9a2ce158-6d93-4148-b2eb-ea6910623e8e"
+            ],
+            "transitions": [],
+            "loops": true
+          }
+        ],
+        "edges": []
+      },
+      "7aab719e-8afc-40ce-9bd6-2276d004c91f": {
+        "id": "7aab719e-8afc-40ce-9bd6-2276d004c91f",
+        "name": "AnimTestCubesMachine",
+        "rate": 1,
+        "starting_node": "5a9decdc-5898-4959-98dc-c77adb439ea0",
+        "sockets": [],
+        "target_skeleton": "c8ec338e-49e7-41a0-b17e-990c3550c93a",
+        "nodes": [
+          {
+            "id": "5a9decdc-5898-4959-98dc-c77adb439ea0",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": [
+              "094454e7-665c-4203-9ba7-23433a46b53b",
+              "f0ec5552-ae90-4cbf-a205-44b14e512cf4"
+            ],
+            "transitions": [],
+            "loops": true
+          }
+        ],
+        "edges": []
+      },
+      "427226fe-81e7-4c20-83d6-7e3452011eda": {
+        "id": "427226fe-81e7-4c20-83d6-7e3452011eda",
+        "name": "AnimCubesMachine",
+        "rate": 1,
+        "starting_node": "b263c368-523d-4611-baaf-1320c7f4137d",
         "sockets": [],
         "target_skeleton": null,
         "nodes": [
           {
-            "id": "b740db76-4f94-415e-8727-df5c55c700c0",
+            "id": "b263c368-523d-4611-baaf-1320c7f4137d",
             "position": {
               "x": 0,
               "y": 0
@@ -1332,36 +1474,16 @@
         ],
         "edges": []
       },
-      "470193a3-420e-4f97-b92d-e2b6e6a51abe": {
-        "id": "470193a3-420e-4f97-b92d-e2b6e6a51abe",
+      "fe874bc4-e120-4439-930f-f45fc275def8": {
+        "id": "fe874bc4-e120-4439-930f-f45fc275def8",
         "name": "Unknown",
         "rate": 1,
-        "starting_node": "5a400cc5-f374-476b-8d8c-3576227f9b06",
+        "starting_node": "6485d86e-7fb6-4e09-b0b1-740f1bfa6369",
         "sockets": [],
         "target_skeleton": null,
         "nodes": [
           {
-            "id": "5a400cc5-f374-476b-8d8c-3576227f9b06",
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "animation_id": null,
-            "transitions": []
-          }
-        ],
-        "edges": []
-      },
-      "0c92b03d-9062-4027-bd36-2307a45e8f38": {
-        "id": "0c92b03d-9062-4027-bd36-2307a45e8f38",
-        "name": "Unknown",
-        "rate": 1,
-        "starting_node": "44333cea-9834-4e88-99ef-81582d17cc7b",
-        "sockets": [],
-        "target_skeleton": null,
-        "nodes": [
-          {
-            "id": "44333cea-9834-4e88-99ef-81582d17cc7b",
+            "id": "6485d86e-7fb6-4e09-b0b1-740f1bfa6369",
             "position": {
               "x": 0,
               "y": 0
