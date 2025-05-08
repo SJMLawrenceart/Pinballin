@@ -739,104 +739,6 @@
           }
         ]
       },
-      "74788204-9211-4553-9294-32701eece271": {
-        "id": "74788204-9211-4553-9294-32701eece271",
-        "tag": {
-          "name": "Flipper1"
-        },
-        "transform": {
-          "transform": {
-            "translation": [
-              2.0745943,
-              0.35280126,
-              10.575103
-            ],
-            "rotation": [
-              0,
-              0,
-              0
-            ],
-            "scale": [
-              1,
-              1,
-              1
-            ]
-          }
-        },
-        "components": [
-          {
-            "ModelComponent": {
-              "cast_shadows": true,
-              "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
-              "skip": false,
-              "transform": {
-                "rotation": [
-                  6.123233995736766e-17,
-                  0,
-                  0,
-                  1
-                ],
-                "scale": [
-                  1,
-                  1,
-                  1
-                ],
-                "translation": [
-                  0,
-                  0,
-                  0
-                ]
-              }
-            }
-          },
-          {
-            "StateMachineComponent": {
-              "id": "0e6636b5-435c-4117-a125-2a6620a4cd28",
-              "machine_id": "a49def1a-b3bd-4731-be46-af378adf6c46"
-            }
-          },
-          {
-            "PhysicsComponent": {
-              "debug": false,
-              "id": "a789a6ac-2a50-4458-a6c9-db2566b8875a",
-              "joint": {
-                "body": {
-                  "allow_rotation": [
-                    true,
-                    true,
-                    true
-                  ],
-                  "allow_translation": [
-                    true,
-                    true,
-                    true
-                  ],
-                  "ccd": false,
-                  "collider_type": {
-                    "Trimesh": {
-                      "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1"
-                    }
-                  },
-                  "density": 1,
-                  "dynamic_type": "Position",
-                  "friction": 0,
-                  "id": "cd444f34-c43b-483d-9daa-877d3a1d4fd4",
-                  "is_sensor": true,
-                  "restitution": 0.1
-                },
-                "config": null,
-                "id": "4f5e3490-c9bd-4843-894c-f8083d13fe23",
-                "name": "COLFlip",
-                "offset": [
-                  0,
-                  0,
-                  0
-                ]
-              }
-            }
-          }
-        ]
-      },
       "2563a756-05ae-4a02-bc4f-8c793c737040": {
         "id": "2563a756-05ae-4a02-bc4f-8c793c737040",
         "tag": {
@@ -932,13 +834,13 @@
       "43e08f61-dee0-432d-88b5-1f6afa08ca59": {
         "id": "43e08f61-dee0-432d-88b5-1f6afa08ca59",
         "tag": {
-          "name": "Flipper1 1"
+          "name": "FlipperL"
         },
         "transform": {
           "transform": {
             "translation": [
-              -2.9047825,
-              0.35280126,
+              -4.1754923,
+              0.9955425,
               10.575103
             ],
             "rotation": [
@@ -947,7 +849,7 @@
               0
             ],
             "scale": [
-              -1,
+              1,
               1,
               1
             ]
@@ -957,7 +859,7 @@
           {
             "ModelComponent": {
               "cast_shadows": true,
-              "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+              "id": "ec09e920-2990-42e5-b6b1-289e412d006f",
               "skip": false,
               "transform": {
                 "rotation": [
@@ -981,14 +883,99 @@
           },
           {
             "StateMachineComponent": {
-              "id": "50507e7b-57fa-4df2-8094-b4faabfae722",
-              "machine_id": "a49def1a-b3bd-4731-be46-af378adf6c46"
+              "id": "cd3e9bd0-b655-46e0-a791-d0d9112b6569",
+              "machine_id": "1fa6dfe5-8e1f-407d-aad5-908a7140cd17"
+            }
+          }
+        ]
+      },
+      "af133670-39b6-48d7-bed6-53eb8ff4d63c": {
+        "id": "af133670-39b6-48d7-bed6-53eb8ff4d63c",
+        "tag": {
+          "name": "FlipperR"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              2.199839,
+              1.0721598,
+              10.575103
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "ModelComponent": {
+              "cast_shadows": true,
+              "id": "e099fb95-184a-4880-acb5-9b2da7955875",
+              "skip": false,
+              "transform": {
+                "rotation": [
+                  6.123233995736766e-17,
+                  0,
+                  0,
+                  1
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ],
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
             }
           },
           {
+            "StateMachineComponent": {
+              "id": "3de3913e-8356-40c7-99a9-5df34e1f9931",
+              "machine_id": "bfe03aea-7069-4392-9666-83722e4fda2f"
+            }
+          }
+        ]
+      },
+      "31372e6d-6849-43c5-b26e-c4399158698b": {
+        "id": "31372e6d-6849-43c5-b26e-c4399158698b",
+        "tag": {
+          "name": "COLFlipL"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              0,
+              0,
+              -0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
             "PhysicsComponent": {
               "debug": false,
-              "id": "b37f0432-0036-4049-8ca5-ded7df42153d",
+              "id": "d708a52b-8c66-493e-b0a4-1d92260d4cef",
               "joint": {
                 "body": {
                   "allow_rotation": [
@@ -1004,25 +991,104 @@
                   "ccd": false,
                   "collider_type": {
                     "Trimesh": {
-                      "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1"
+                      "id": "b40cb069-c190-44b1-b541-2e6690fcf3c6"
                     }
                   },
                   "density": 1,
-                  "dynamic_type": "Position",
-                  "friction": 0,
-                  "id": "32ace567-73aa-49c9-9536-a381d69451d0",
-                  "is_sensor": true,
+                  "dynamic_type": "Kinematic",
+                  "friction": 0.1,
+                  "id": "4dbaf008-e91f-4a8f-8673-9a6c2d7db4ab",
+                  "is_sensor": false,
                   "restitution": 0.1
                 },
                 "config": null,
-                "id": "d9dd94b7-6c95-411f-8fb9-f6e7c4f84b28",
-                "name": "COLFlip",
+                "id": "106409b2-d239-4787-b819-50f30cc22f35",
+                "name": "Joint",
                 "offset": [
                   0,
                   0,
                   0
                 ]
               }
+            }
+          },
+          {
+            "SocketComponent": {
+              "parent_id": "43e08f61-dee0-432d-88b5-1f6afa08ca59",
+              "socket_id": "2355c168-613c-4043-8906-f20adab18e9d"
+            }
+          }
+        ]
+      },
+      "d4b1af48-c1ac-4486-bc64-2071a4ec17e9": {
+        "id": "d4b1af48-c1ac-4486-bc64-2071a4ec17e9",
+        "tag": {
+          "name": "COLFlipR"
+        },
+        "transform": {
+          "transform": {
+            "translation": [
+              0,
+              0,
+              -0.1
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "components": [
+          {
+            "PhysicsComponent": {
+              "debug": false,
+              "id": "8a5096eb-4af7-48ba-aff4-c2e6e91cc048",
+              "joint": {
+                "body": {
+                  "allow_rotation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "allow_translation": [
+                    true,
+                    true,
+                    true
+                  ],
+                  "ccd": false,
+                  "collider_type": {
+                    "Trimesh": {
+                      "id": "8a176589-a3bb-4321-9ed2-a7d8bf32afba"
+                    }
+                  },
+                  "density": 1,
+                  "dynamic_type": "Kinematic",
+                  "friction": 0.1,
+                  "id": "e8559b9b-263d-486c-a7c2-b9071b8101d7",
+                  "is_sensor": false,
+                  "restitution": 0.1
+                },
+                "config": null,
+                "id": "1e00910c-58b6-48ec-8441-ee2a176c521a",
+                "name": "Joint",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          {
+            "SocketComponent": {
+              "parent_id": "af133670-39b6-48d7-bed6-53eb8ff4d63c",
+              "socket_id": "0c994c10-2b91-45f6-a6f5-986bd47f9b01"
             }
           }
         ]
@@ -1048,6 +1114,16 @@
         "id": "cc4a0015-5333-4774-9ccf-981cfa1e6f18",
         "source": "models/ENV/Board/SMBoard.gltf",
         "maxInstances": 10
+      },
+      "ec09e920-2990-42e5-b6b1-289e412d006f": {
+        "id": "ec09e920-2990-42e5-b6b1-289e412d006f",
+        "source": "models/Interactables/Flipper/FlipperL.gltf",
+        "maxInstances": 10
+      },
+      "e099fb95-184a-4880-acb5-9b2da7955875": {
+        "id": "e099fb95-184a-4880-acb5-9b2da7955875",
+        "source": "models/Interactables/Flipper/FlipperR.gltf",
+        "maxInstances": 10
       }
     },
     "trimeshes": {
@@ -1058,6 +1134,14 @@
       "6baafc86-3142-48a5-acf5-8c63003cefa7": {
         "id": "6baafc86-3142-48a5-acf5-8c63003cefa7",
         "source": "models/ENV/Board/COLBoard.gltf"
+      },
+      "b40cb069-c190-44b1-b541-2e6690fcf3c6": {
+        "id": "b40cb069-c190-44b1-b541-2e6690fcf3c6",
+        "source": "models/Interactables/Flipper/COLFlipperL.gltf"
+      },
+      "8a176589-a3bb-4321-9ed2-a7d8bf32afba": {
+        "id": "8a176589-a3bb-4321-9ed2-a7d8bf32afba",
+        "source": "models/Interactables/Flipper/COLFlipperR.gltf"
       }
     },
     "textures": {},
@@ -1075,6 +1159,32 @@
           }
         ],
         "loops": true
+      },
+      "daf569a9-751a-4ae3-acf2-57f705ebdbd0": {
+        "id": "daf569a9-751a-4ae3-acf2-57f705ebdbd0",
+        "source": "models/Interactables/Flipper/FlipperL.gltf",
+        "definitions": [
+          {
+            "id": "13834f31-d7e8-4a08-b8c5-a0dfceaea1c6",
+            "collection_id": "daf569a9-751a-4ae3-acf2-57f705ebdbd0",
+            "name": "FlipTrackL",
+            "loops": true
+          }
+        ],
+        "loops": true
+      },
+      "44a15451-54bd-4131-a157-a42e9d62ef9e": {
+        "id": "44a15451-54bd-4131-a157-a42e9d62ef9e",
+        "source": "models/Interactables/Flipper/FlipperR.gltf",
+        "definitions": [
+          {
+            "id": "7c5ea403-266a-4c31-9dce-817814006ea4",
+            "collection_id": "44a15451-54bd-4131-a157-a42e9d62ef9e",
+            "name": "FlipTrackR",
+            "loops": true
+          }
+        ],
+        "loops": true
       }
     },
     "terrains": {},
@@ -1086,32 +1196,61 @@
     "hdrs": {},
     "audio": {},
     "animation_state": {
-      "a49def1a-b3bd-4731-be46-af378adf6c46": {
-        "id": "a49def1a-b3bd-4731-be46-af378adf6c46",
-        "name": "ANIMFlipperFLIP",
+      "bfe03aea-7069-4392-9666-83722e4fda2f": {
+        "id": "bfe03aea-7069-4392-9666-83722e4fda2f",
+        "name": "FlipR",
         "rate": 1,
-        "starting_node": "09306e68-26fd-44db-b975-4e32191c88ca",
+        "starting_node": "0a55f276-45f2-4908-81cc-766911b25137",
         "sockets": [
           {
-            "id": "9865fd57-e13f-4bd2-b295-00c2b04653bc",
+            "id": "0c994c10-2b91-45f6-a6f5-986bd47f9b01",
             "name": "COL",
             "joint": 1
           }
         ],
-        "target_skeleton": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
+        "target_skeleton": "e099fb95-184a-4880-acb5-9b2da7955875",
         "nodes": [
           {
-            "id": "09306e68-26fd-44db-b975-4e32191c88ca",
+            "id": "0a55f276-45f2-4908-81cc-766911b25137",
             "position": {
               "x": 0,
               "y": 0
             },
             "animation_id": [
-              "e7350490-141f-4fbe-a1bd-ff7416ef7bb5",
-              "e8a4862a-43e2-422f-b768-4b2204010486"
+              "7c5ea403-266a-4c31-9dce-817814006ea4",
+              "44a15451-54bd-4131-a157-a42e9d62ef9e"
             ],
             "transitions": [],
             "loops": true
+          }
+        ],
+        "edges": []
+      },
+      "1fa6dfe5-8e1f-407d-aad5-908a7140cd17": {
+        "id": "1fa6dfe5-8e1f-407d-aad5-908a7140cd17",
+        "name": "FlipL",
+        "rate": 1,
+        "starting_node": "9c4908f2-6094-4bde-a46b-f9a41d1deda1",
+        "sockets": [
+          {
+            "id": "2355c168-613c-4043-8906-f20adab18e9d",
+            "name": "COL",
+            "joint": 1
+          }
+        ],
+        "target_skeleton": "ec09e920-2990-42e5-b6b1-289e412d006f",
+        "nodes": [
+          {
+            "id": "9c4908f2-6094-4bde-a46b-f9a41d1deda1",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "animation_id": [
+              "13834f31-d7e8-4a08-b8c5-a0dfceaea1c6",
+              "daf569a9-751a-4ae3-acf2-57f705ebdbd0"
+            ],
+            "transitions": []
           }
         ],
         "edges": []
