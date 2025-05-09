@@ -208,17 +208,24 @@ impl GameInput {
       )) => {
         self.developer_reset_ball.release();
       }
-      DeviceEvent::Keyboard(KeyboardEvent::Button(
-        ButtonState::Down,
-        KeyboardKey::Space,
-      )) => {
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Down, KeyboardKey::Space)) => {
         self.state |= GameInputState::Action;
       }
-      DeviceEvent::Keyboard(KeyboardEvent::Button(
-        ButtonState::Up,
-        KeyboardKey::Space,
-      )) => {
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Up, KeyboardKey::Space)) => {
         self.state -= GameInputState::Action;
+      }
+
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Down, KeyboardKey::P)) => {
+        self.state |= GameInputState::ToggleDebugPerformance;
+      }
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Up, KeyboardKey::P)) => {
+        self.state -= GameInputState::ToggleDebugPerformance;
+      }
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Down, KeyboardKey::O)) => {
+        self.state |= GameInputState::ToggleDebugPhysics;
+      }
+      DeviceEvent::Keyboard(KeyboardEvent::Button(ButtonState::Up, KeyboardKey::O)) => {
+        self.state -= GameInputState::ToggleDebugPhysics;
       }
       _ => {}
     }
