@@ -1105,11 +1105,6 @@
         "source": "models/static-models/Pinball/SM_PinBall.gltf",
         "maxInstances": 10
       },
-      "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e": {
-        "id": "8db77ab5-0d2f-4249-bd18-0d0411ecbe9e",
-        "source": "models/Interactables/Flipper/Flipper.gltf",
-        "maxInstances": 10
-      },
       "cc4a0015-5333-4774-9ccf-981cfa1e6f18": {
         "id": "cc4a0015-5333-4774-9ccf-981cfa1e6f18",
         "source": "models/ENV/Board/SMBoard.gltf",
@@ -1127,10 +1122,6 @@
       }
     },
     "trimeshes": {
-      "f27a1d9e-a69c-4e1a-a30b-e1058386aec1": {
-        "id": "f27a1d9e-a69c-4e1a-a30b-e1058386aec1",
-        "source": "models/Interactables/Flipper/COLFlipper.gltf"
-      },
       "6baafc86-3142-48a5-acf5-8c63003cefa7": {
         "id": "6baafc86-3142-48a5-acf5-8c63003cefa7",
         "source": "models/ENV/Board/COLBoard.gltf"
@@ -1147,19 +1138,6 @@
     "textures": {},
     "particles": {},
     "animations": {
-      "e8a4862a-43e2-422f-b768-4b2204010486": {
-        "id": "e8a4862a-43e2-422f-b768-4b2204010486",
-        "source": "models/Interactables/Flipper/Flipper.gltf",
-        "definitions": [
-          {
-            "id": "e7350490-141f-4fbe-a1bd-ff7416ef7bb5",
-            "collection_id": "e8a4862a-43e2-422f-b768-4b2204010486",
-            "name": "FlipTrack1",
-            "loops": true
-          }
-        ],
-        "loops": true
-      },
       "daf569a9-751a-4ae3-acf2-57f705ebdbd0": {
         "id": "daf569a9-751a-4ae3-acf2-57f705ebdbd0",
         "source": "models/Interactables/Flipper/FlipperL.gltf",
